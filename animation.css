@@ -1,0 +1,12 @@
+.leDoorCloseLeft span { animation-name: leDoorCloseLeft }
+@keyframes leDoorCloseLeft {
+    from, to {
+        transform: perspective(400px);
+        transform-origin: left
+    }
+    from {
+        transform: rotateY(90deg);
+        opacity: 0;
+    }
+    to { opacity: 1 }
+}

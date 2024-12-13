@@ -157,6 +157,7 @@ html {
     flex-direction: column; /* Stack the logo and menu */
     align-items: flex-start;
     padding: 20px;
+    position: static;
   }
 
   .pet {

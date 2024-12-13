@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Udara Wickramarathne</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="blogs.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo-container">
+          <img class="logo-img" src="../logo.png" alt="" />
+          <p class="logo">
+            UDARA<br />
+            WICKRAMARATHNE
+          </p>
+        </div>
+        <ul class="menu" id="menu">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="../about-me.html">About</a></li>
+          <li><a href="../index.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="article-page">
+      <main class="article-main">
+        <div class="article-header">
+          <h1 class="scroll-animate">
+            Mastering Git and GitHub: A Comprehensive Guide
+          </h1>
+          <p class="article-date">Published on November 22, 2024</p>
+        </div>
+
+        <div class="article-content">
+          <p class="scroll-animate">
+            Git and GitHub are essential tools for modern software development.
+            Git is a version control system that helps you track changes in your
+            code, while GitHub is a platform for hosting and collaborating on
+            Git repositories. This guide covers best practices, learning
+            strategies, must-do projects, design patterns, and expert insights
+            to elevate your Git and GitHub skills.
+          </p>
+          <br />
+          <h2>📚 <strong>How to Learn Git and GitHub Effectively</strong></h2>
+          <h3>1. <strong>Understand the Basics</strong></h3>
+          <p>
+            Start with understanding the core concepts of Git and GitHub.
+            Familiarize yourself with:
+          </p>
+          <ul>
+            <li>
+              <strong>Version Control:</strong> The process of tracking and
+              managing changes to software code.
+            </li>
+            <li>
+              <strong>Repositories:</strong> A storage space where your project
+              lives.
+            </li>
+            <li>
+              <strong>Commits:</strong> Snapshots of your project at specific
+              points in time.
+            </li>
+            <li>
+              <strong>Branches:</strong> Parallel versions of your project.
+            </li>
+          </ul>
+
+          <h3>2. <strong>Explore Core Concepts</strong></h3>
+          <ul>
+            <li>
+              <strong>Cloning:</strong> Creating a local copy of a remote
+              repository.
+            </li>
+            <li>
+              <strong>Pull Requests:</strong> Proposing changes to a repository.
+            </li>
+            <li>
+              <strong>Merging:</strong> Combining changes from different
+              branches.
+            </li>
+            <li>
+              <strong>Rebasing:</strong> Reapplying commits on top of another
+              base tip.
+            </li>
+          </ul>
+
+          <h3 class="scroll-animate">
+            3. <strong>Practice, Practice, Practice!</strong>
+          </h3>
+          <p class="scroll-animate">
+            Build small projects to apply your knowledge practically. Contribute
+            to open-source repositories and explore coding challenges.
+          </p>
+
+          <h2 class="scroll-animate">
+            🛠️ <strong>Must-Do Projects for Mastery</strong>
+          </h2>
+          <ul class="scroll-animate">
+            <li>
+              <strong>Personal Website:</strong> Host your personal website on
+              GitHub Pages.
+            </li>
+            <li>
+              <strong>Open Source Contribution:</strong> Contribute to an
+              open-source project.
+            </li>
+            <li>
+              <strong>Version Control Practice:</strong> Create a project and
+              practice branching, merging, and rebasing.
+            </li>
+            <li>
+              <strong>Collaborative Project:</strong> Work on a project with
+              others to practice collaboration workflows.
+            </li>
+            <li>
+              <strong>Automated Deployment:</strong> Set up continuous
+              integration and deployment for a project.
+            </li>
+          </ul>
+
+          <h2 class="scroll-animate">🧑‍💻 <strong>Best Practices</strong></h2>
+          <ul class="scroll-animate">
+            <li>
+              <strong>Commit Often:</strong> Make small, frequent commits with
+              clear messages.
+            </li>
+            <li>
+              <strong>Use Branches:</strong> Create branches for new features,
+              bug fixes, and experiments.
+            </li>
+            <li>
+              <strong>Write Clear Commit Messages:</strong> Use descriptive
+              messages to explain what changes were made and why.
+            </li>
+            <li>
+              <strong>Collaborate Effectively:</strong> Use pull requests and
+              code reviews to collaborate with others.
+            </li>
+            <li>
+              <strong>Keep Repositories Clean:</strong> Regularly clean up
+              branches and keep your repository organized.
+            </li>
+          </ul>
+
+          <h2 class="scroll-animate">
+            🎨 <strong>Design Patterns in Git and GitHub</strong>
+          </h2>
+          <h3 class="scroll-animate">
+            1. <strong>Feature Branch Workflow</strong>
+          </h3>
+          <div class="highlight" class="scroll-animate">
+            <code>
+              git checkout -b feature-branch<br />
+              git add .<br />
+              git commit -m "Add new feature"<br />
+              git push origin feature-branch<br />
+              // Create a pull request on GitHub
+            </code>
+          </div>
+
+          <h3 class="scroll-animate">2. <strong>Forking Workflow</strong></h3>
+          <div class="highlight" class="scroll-animate">
+            <code>
+              // Fork the repository on GitHub<br />
+              git clone https://github.com/your-username/repository<br />
+              git remote add upstream
+              https://github.com/original-owner/repository<br />
+              git fetch upstream<br />
+              git checkout main<br />
+              git merge upstream/main<br />
+              git push origin main
+            </code>
+          </div>
+
+          <h3 class="scroll-animate">3. <strong>Gitflow Workflow</strong></h3>
+          <p>
+            Use the Gitflow branching model to manage releases, hotfixes, and
+            feature development.
+          </p>
+
+          <h3 class="scroll-animate">4. <strong>Rebase Workflow</strong></h3>
+          <p>Use rebasing to keep a clean and linear project history.</p>
+
+          <h2 class="scroll-animate">
+            💡 <strong>Expert Insights and Tips</strong>
+          </h2>
+          <ul class="scroll-animate">
+            <li>
+              <strong>Stay Updated:</strong> Git and GitHub evolve rapidly.
+              Follow updates on the official Git and GitHub blogs.
+            </li>
+            <li>
+              <strong>Master Git Commands:</strong> Learn and practice essential
+              Git commands to become proficient.
+            </li>
+            <li>
+              <strong>Focus on Collaboration:</strong> Use GitHub features like
+              issues, pull requests, and project boards to collaborate
+              effectively.
+            </li>
+          </ul>
+
+          <h2 class="scroll-animate">🚀 <strong>Final Thoughts</strong></h2>
+          <p class="scroll-animate">
+            Mastering Git and GitHub involves understanding their core concepts,
+            applying best practices, and continuously building projects. By
+            exploring various workflows and keeping an eye on new trends, you
+            can create scalable, maintainable, and efficient projects. Happy
+            coding!
+          </p>
+        </div>
+      </main>
+
+      <aside class="sidebar">
+        <div class="author-profile">
+          <img src="../portfolio-web-profile.png" alt="Author" />
+          <h3>Udara Wickramarathne</h3>
+          <p>
+            Undergraduate Software Engineer specializing in Flutter development.
+            Passionate about building accessible web experiences.
+          </p>
+        </div>
+      </aside>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-links">
+        <a href="#" class="footer-link"
+          ><i class="fab fa-linkedin"></i> LinkedIn</a
+        >
+        <a href="#" class="footer-link"
+          ><i class="fab fa-instagram"></i> Instagram</a
+        >
+        <a href="#" class="footer-link"
+          ><i class="fab fa-discord"></i> Discord</a
+        >
+        <a href="#" class="footer-link"><i class="fab fa-github"></i> GitHub</a>
+      </div>
+      <p>&copy; 2024 Udara Wickramarathne. All rights reserved.</p>
+    </footer>
+    <script>
+      // Function to observe elements
+      const observer = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach((entry) => {
+            // If the element is in view, add the 'visible' class
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              observer.unobserve(entry.target); // Stop observing after animation trigger
+            }
+          });
+        },
+        {
+          threshold: 0.5, // Trigger when 50% of the element is in view
+        }
+      );
+
+      // Apply observer to all elements with .scroll-animate class
+      document.querySelectorAll(".scroll-animate").forEach((element) => {
+        observer.observe(element);
+      });
+    </script>
+  </body>
+</html>

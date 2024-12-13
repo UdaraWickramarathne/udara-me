@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Udara Wickramarathne</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="blogs.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo-container">
+          <img class="logo-img" src="../logo.png" alt="" />
+          <p class="logo">
+            UDARA<br />
+            WICKRAMARATHNE
+          </p>
+        </div>
+        <ul class="menu" id="menu">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="../about-me.html">About</a></li>
+          <li><a href="../index.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="article-page">
+      <main class="article-main">
+        <div class="article-header">
+          <h1 class="scroll-animate">Mastering React.js: A Beginner's Guide</h1>
+          <p class="article-date">Published on November 22, 2024</p>
+        </div>
+
+        <div class="article-content">
+          <p class="scroll-animate">
+            React.js, developed by Facebook, has become the go-to library for
+            building dynamic and efficient user interfaces. Its component-based
+            architecture, coupled with powerful state management and virtual
+            DOM, makes it an ideal choice for modern web development. This
+            article covers best practices, learning strategies, must-do
+            projects, design patterns, and expert insights to elevate your React
+            skills.
+          </p>
+          <br />
+          <h2>📚 <strong>How to Learn React.js Effectively</strong></h2>
+          <h3>1. <strong>Grasp the Fundamentals</strong></h3>
+          <p>
+            Start with understanding JavaScript ES6+ concepts (such as arrow
+            functions, classes, modules, and promises). Familiarize yourself
+            with:
+          </p>
+          <ul>
+            <li>
+              <strong>JSX (JavaScript XML):</strong> Syntax extension allowing
+              HTML within JavaScript.
+            </li>
+            <li>
+              <strong>Components:</strong> Reusable building blocks (functional
+              vs. class components).
+            </li>
+            <li>
+              <strong>State and Props:</strong> Mechanisms for managing data
+              flow.
+            </li>
+          </ul>
+
+          <h3>2. <strong>Explore Core Concepts</strong></h3>
+          <ul>
+            <li>
+              <strong>Hooks</strong> (<code>useState</code>,
+              <code>useEffect</code>, <code>useContext</code>, etc.)
+            </li>
+            <li><strong>Lifecycle Methods</strong> (for class components)</li>
+            <li><strong>React Router</strong> (for navigation)</li>
+            <li><strong>Context API</strong> (for state management)</li>
+          </ul>
+
+          <h3 class="scroll-animate">
+            3. <strong>Practice, Practice, Practice!</strong>
+          </h3>
+          <p class="scroll-animate">
+            Build small projects to apply your knowledge practically. Contribute
+            to open-source repositories and explore coding challenges.
+          </p>
+
+          <h2 class="scroll-animate">
+            🛠️ <strong>Must-Do Projects for Mastery</strong>
+          </h2>
+          <ul class="scroll-animate">
+            <li>
+              <strong>To-Do List:</strong> Start simple to learn about state,
+              props, and event handling.
+            </li>
+            <li>
+              <strong>Weather App:</strong> Learn API integration and
+              conditional rendering.
+            </li>
+            <li>
+              <strong>E-commerce Platform:</strong> Implement advanced concepts
+              like state management (Redux), authentication, and responsive
+              design.
+            </li>
+            <li>
+              <strong>Blog Platform:</strong> Manage CRUD operations and use
+              React Router for navigating between posts.
+            </li>
+            <li>
+              <strong>Social Media Dashboard:</strong> Explore context,
+              performance optimization, and handling real-time updates.
+            </li>
+          </ul>
+
+          <h2 class="scroll-animate">🧑‍💻 <strong>Best Practices</strong></h2>
+          <ul class="scroll-animate">
+            <li>
+              <strong>Component Reusability:</strong> Break down your UI into
+              smaller, reusable components. Follow the Single Responsibility
+              Principle (SRP).
+            </li>
+            <li>
+              <strong>State Management:</strong> Use
+              <strong>local state</strong> for component-specific data. Opt for
+              <strong>Redux</strong> or <strong>Zustand</strong> when the
+              application scales. Leverage <strong>React Query</strong> for
+              efficient data fetching and caching.
+            </li>
+            <li>
+              <strong>Optimized Rendering:</strong> Use
+              <strong>React.memo</strong> to prevent unnecessary re-renders.
+              Utilize <strong>Lazy Loading</strong> and
+              <strong>Suspense</strong> for code splitting.
+            </li>
+            <li>
+              <strong>Readable Code:</strong> Maintain clear, consistent naming
+              conventions. Follow linting and formatting rules using
+              <strong>ESLint</strong> and <strong>Prettier</strong>.
+            </li>
+            <li>
+              <strong>Testing:</strong> Write unit tests with
+              <strong>Jest</strong>. Use
+              <strong>React Testing Library</strong> for component interaction
+              tests.
+            </li>
+          </ul>
+
+          <h2 class="scroll-animate">
+            🎨 <strong>Design Patterns in React</strong>
+          </h2>
+          <h3 class="scroll-animate">
+            1. <strong>Higher-Order Components (HOC)</strong>
+          </h3>
+          <div class="highlight" class="scroll-animate">
+            <code>
+              const withAuth = (Component) => (props) => {<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;return isAuthenticated ? &lt;Component
+              {...props} /&gt; : &lt;Login /&gt;;<br />
+              };
+            </code>
+          </div>
+
+          <h3 class="scroll-animate">2. <strong>Render Props</strong></h3>
+          <div class="highlight" class="scroll-animate">
+            <code>
+              &lt;DataProvider render={(data) =&gt; &lt;SomeComponent
+              data={data} /&gt;} /&gt;
+            </code>
+          </div>
+
+          <h3 class="scroll-animate">
+            3. <strong>Container-Presentational Pattern</strong>
+          </h3>
+          <p>
+            Separate <strong>container</strong> components (handling logic) from
+            <strong>presentational</strong> ones (handling UI).
+          </p>
+
+          <h3 class="scroll-animate">4. <strong>Custom Hooks</strong></h3>
+          <p>
+            Encapsulate reusable logic in custom hooks (<code>useFetch</code>,
+            <code>useLocalStorage</code>).
+          </p>
+
+          <h2 class="scroll-animate">
+            💡 <strong>Expert Insights and Tips</strong>
+          </h2>
+          <ul class="scroll-animate">
+            <li>
+              <strong>Stay Updated:</strong> React evolves rapidly. Follow
+              updates on the official React blog and GitHub repository.
+            </li>
+            <li>
+              <strong>Master TypeScript:</strong> Combining React with
+              TypeScript enhances type safety and developer productivity.
+            </li>
+            <li>
+              <strong>Focus on Accessibility (a11y):</strong> Ensure your
+              application adheres to accessibility standards using tools like
+              Lighthouse.
+            </li>
+          </ul>
+
+          <h2 class="scroll-animate">🚀 <strong>Final Thoughts</strong></h2>
+          <p class="scroll-animate">
+            Mastering React.js involves understanding its core concepts,
+            applying best practices, and continuously building projects. By
+            exploring various design patterns and keeping an eye on new trends,
+            you can create scalable, maintainable, and efficient applications.
+            Happy coding!
+          </p>
+        </div>
+      </main>
+
+      <aside class="sidebar">
+        <div class="author-profile">
+          <img src="../portfolio-web-profile.png" alt="Author" />
+          <h3>Udara Wickramarathne</h3>
+          <p>
+            Undergraduate Software Engineer specializing in Flutter development.
+            Passionate about building accessible web experiences.
+          </p>
+        </div>
+
+        <!-- <nav class="article-nav">
+                <h4>In this article</h4>
+                <ul>
+                    <li><a href="#intro">Exploring Generative AI</a></li>
+                    <li><a href="#pitfalls">Steering Clear of Pitfalls</a></li>
+                    <li><a href="#capabilities">Understanding React Capabilities</a></li>
+                    <li><a href="#readers">Understanding Your Readers</a></li>
+                </ul>
+            </nav> -->
+      </aside>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-links">
+        <a href="#" class="footer-link"
+          ><i class="fab fa-linkedin"></i> LinkedIn</a
+        >
+        <a href="#" class="footer-link"
+          ><i class="fab fa-instagram"></i> Instagram</a
+        >
+        <a href="#" class="footer-link"
+          ><i class="fab fa-discord"></i> Discord</a
+        >
+        <a href="#" class="footer-link"><i class="fab fa-github"></i> GitHub</a>
+      </div>
+      <p>&copy; 2024 Udara Wickramarathne. All rights reserved.</p>
+    </footer>
+    <script>
+      // Function to observe elements
+      const observer = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach((entry) => {
+            // If the element is in view, add the 'visible' class
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              observer.unobserve(entry.target); // Stop observing after animation trigger
+            }
+          });
+        },
+        {
+          threshold: 0.5, // Trigger when 50% of the element is in view
+        }
+      );
+
+      // Apply observer to all elements with .scroll-animate class
+      document.querySelectorAll(".scroll-animate").forEach((element) => {
+        observer.observe(element);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,226 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+}
+
+.article-page {
+  display: flex;
+  flex-direction: column; /* Change to column for mobile-first */
+  max-width: 90vw; /* Slightly wider on mobile */
+  margin: 20px auto;
+  gap: 20px; /* Adds spacing between main and sidebar */
+  margin-top: 150px;
+}
+
+.article-main {
+  flex: 3;
+  padding: 25px;
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 1s ease-in-out;
+  border: 1px solid #333;
+}
+
+.article-header h1 {
+  color: #3b82f6;
+  font-size: 2.3em;
+  margin-bottom: 15px;
+  animation: slideInLeft 1s ease-in-out;
+}
+
+.article-date {
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.article-content h2 {
+  color: #3b82f6;
+  border-bottom: 2px solid #3b82f6;
+  padding-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  animation: slideInLeft 1s ease-in-out;
+}
+
+.article-content h3 {
+  color: #3b82f6;
+  margin-top: 20px;
+  animation: slideInLeft 1s ease-in-out;
+}
+
+.article-content p,
+.article-content li {
+  line-height: 1.9;
+  color: #e0e0e0;
+  margin-bottom: 15px;
+  animation: fadeIn 1.2s ease-in-out;
+  animation-delay: 0.2s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.article-content ul {
+  margin-left: 20px;
+}
+
+.article-content li {
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.sidebar {
+  flex: 1;
+  margin-left: 0;
+  margin-top: 20px; /* Space above sidebar on mobile */
+  animation: slideInRight 1s ease-in-out;
+  animation-delay: 0.5s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.author-profile {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  text-align: center;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.author-profile img {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.author-profile h3 {
+  margin: 10px 0;
+  color: #3b82f6;
+}
+
+.author-profile p {
+  text-align: left;
+  color: #e0e0e0;
+  margin-top: 10px;
+}
+
+.highlight code {
+  background-color: #2e2e2e;
+  padding: 10px;
+  border-radius: 5px;
+  display: block;
+  margin: 10px 0;
+  white-space: pre-wrap;
+  animation: fadeIn 1.5s ease-in-out;
+  animation-delay: 0.3s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Slide-in animation for headings */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Slide-in animation for the sidebar */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.article-header h1,
+.article-content h2,
+.article-content h3 {
+  animation: slideInLeft 1s ease-in-out;
+}
+
+.menu li a,
+.article-content a {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.menu li a:hover,
+.article-content a:hover {
+  color: #00bcd4;
+  transform: translateY(-3px);
+}
+
+.article-content li:hover {
+  transform: scale(1.02);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.scroll-animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design for Mobile */
+@media (min-width: 768px) {
+  .article-page {
+    flex-direction: row; /* Side-by-side layout for larger screens */
+    max-width: 80vw;
+  }
+
+  .sidebar {
+    margin-left: 30px;
+    margin-top: 0; /* Remove top margin on desktop */
+  }
+
+  .article-main {
+    padding: 40px;
+  }
+
+  .article-header h1 {
+    font-size: 3em;
+  }
+}

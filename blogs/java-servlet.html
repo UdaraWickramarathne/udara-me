@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Udara Wickramarathne</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="blogs.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo-container">
+          <img class="logo-img" src="../logo.png" alt="" />
+          <p class="logo">
+            UDARA<br />
+            WICKRAMARATHNE
+          </p>
+        </div>
+        <ul class="menu" id="menu">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="../about-me.html">About</a></li>
+          <li><a href="../index.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="article-page">
+      <main class="article-main">
+        <div class="article-header">
+          <h1 class="scroll-animate">
+            Mastering Java Servlet and JSP: A Comprehensive Guide
+          </h1>
+          <p class="article-date">Published on November 22, 2024</p>
+        </div>
+
+        <div class="article-content">
+          <p class="scroll-animate">
+            Java Servlets and JSP (JavaServer Pages) are essential technologies
+            for building dynamic web applications in Java. This guide covers
+            best practices, learning strategies, must-do projects, design
+            patterns, and expert insights to elevate your Java Servlet and JSP
+            skills.
+          </p>
+          <br />
+          <h2>
+            📚 <strong>How to Learn Java Servlet and JSP Effectively</strong>
+          </h2>
+          <h3>1. <strong>Understand the Basics</strong></h3>
+          <p>
+            Start with understanding the core concepts of Java Servlets and JSP.
+            Familiarize yourself with:
+          </p>
+          <ul>
+            <li>
+              <strong>Servlets:</strong> Java classes that handle HTTP requests
+              and responses.
+            </li>
+            <li>
+              <strong>JSP:</strong> JavaServer Pages for creating dynamic web
+              content.
+            </li>
+            <li>
+              <strong>Servlet Lifecycle:</strong> The stages a servlet goes
+              through from creation to destruction.
+            </li>
+            <li>
+              <strong>JSP Lifecycle:</strong> The stages a JSP page goes through
+              from translation to execution.
+            </li>
+          </ul>
+
+          <h3>2. <strong>Explore Core Concepts</strong></h3>
+          <ul>
+            <li>
+              <strong>Request and Response:</strong> Handling HTTP requests and
+              generating responses.
+            </li>
+            <li>
+              <strong>Session Management:</strong> Managing user sessions and
+              cookies.
+            </li>
+            <li>
+              <strong>JSP Directives:</strong> Page, include, and taglib
+              directives.
+            </li>
+            <li>
+              <strong>Custom Tags:</strong> Creating reusable components with
+              custom tags.
+            </li>
+          </ul>
+
+          <h3 class="scroll-animate">
+            3. <strong>Practice, Practice, Practice!</strong>
+          </h3>
+          <p class="scroll-animate">
+            Build small projects to apply your knowledge practically. Contribute
+            to open-source repositories and explore coding challenges.
+          </p>
+
+          <h2 class="scroll-animate">
+            🛠️ <strong>Must-Do Projects for Mastery</strong>
+          </h2>
+          <ul class="scroll-animate">
+            <li>
+              <strong>Login System:</strong> Implement user authentication and
+              session management.
+            </li>
+            <li>
+              <strong>CRUD Application:</strong> Create, read, update, and
+              delete operations with a database.
+            </li>
+            <li>
+              <strong>Shopping Cart:</strong> Manage user sessions and state
+              with servlets and JSP.
+            </li>
+            <li>
+              <strong>Blog Platform:</strong> Manage posts, comments, and user
+              sessions.
+            </li>
+            <li>
+              <strong>File Upload:</strong> Handle file uploads and downloads
+              with servlets.
+            </li>
+          </ul>
+
+          <h2 class="scroll-animate">🧑‍💻 <strong>Best Practices</strong></h2>
+          <ul class="scroll-animate">
+            <li>
+              <strong>Separation of Concerns:</strong> Keep your business logic
+              separate from presentation logic.
+            </li>
+            <li>
+              <strong>Use MVC Pattern:</strong> Implement the
+              Model-View-Controller pattern for better organization.
+            </li>
+            <li>
+              <strong>Session Management:</strong> Properly manage user sessions
+              and handle session expiration.
+            </li>
+            <li>
+              <strong>Security:</strong> Implement security best practices to
+              protect against common vulnerabilities.
+            </li>
+            <li>
+              <strong>Readable Code:</strong> Maintain clear, consistent naming
+              conventions and follow best practices for code organization.
+            </li>
+          </ul>
+
+          <h2 class="scroll-animate">
+            🎨 <strong>Design Patterns in Java Servlet and JSP</strong>
+          </h2>
+          <h3 class="scroll-animate">
+            1. <strong>Model-View-Controller (MVC)</strong>
+          </h3>
+          <div class="highlight" class="scroll-animate">
+            <code>
+              // Controller Servlet<br />
+              @WebServlet("/controller")<br />
+              public class ControllerServlet extends HttpServlet {<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;protected void doGet(HttpServletRequest
+              request, HttpServletResponse response) throws ServletException,
+              IOException {<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Handle request
+              and forward to view<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;request.getRequestDispatcher("/view.jsp").forward(request,
+              response);<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;}<br />
+              }
+            </code>
+          </div>
+
+          <h3 class="scroll-animate">2. <strong>Front Controller</strong></h3>
+          <div class="highlight" class="scroll-animate">
+            <code>
+              // Front Controller Servlet<br />
+              @WebServlet("/frontcontroller")<br />
+              public class FrontControllerServlet extends HttpServlet {<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;protected void service(HttpServletRequest
+              request, HttpServletResponse response) throws ServletException,
+              IOException {<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Centralized
+              request handling<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String action =
+              request.getParameter("action");<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if
+              ("login".equals(action)) {<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;request.getRequestDispatcher("/login.jsp").forward(request,
+              response);<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} else if
+              ("register".equals(action)) {<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;request.getRequestDispatcher("/register.jsp").forward(request,
+              response);<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;}<br />
+              }
+            </code>
+          </div>
+
+          <h3 class="scroll-animate">
+            3. <strong>Data Access Object (DAO)</strong>
+          </h3>
+          <p>
+            Use the DAO pattern to abstract and encapsulate all access to the
+            data source.
+          </p>
+
+          <h3 class="scroll-animate">4. <strong>Template Method</strong></h3>
+          <p>
+            Define the skeleton of an algorithm in a method, deferring some
+            steps to subclasses.
+          </p>
+
+          <h2 class="scroll-animate">
+            💡 <strong>Expert Insights and Tips</strong>
+          </h2>
+          <ul class="scroll-animate">
+            <li>
+              <strong>Stay Updated:</strong> Java Servlet and JSP technologies
+              evolve. Follow updates on the official Java EE blog and GitHub
+              repository.
+            </li>
+            <li>
+              <strong>Master Java:</strong> Combining Java Servlet and JSP with
+              core Java skills enhances your ability to write efficient and
+              maintainable code.
+            </li>
+            <li>
+              <strong>Focus on Performance:</strong> Ensure your application
+              runs smoothly by optimizing code and managing resources
+              efficiently.
+            </li>
+          </ul>
+
+          <h2 class="scroll-animate">🚀 <strong>Final Thoughts</strong></h2>
+          <p class="scroll-animate">
+            Mastering Java Servlet and JSP involves understanding their core
+            concepts, applying best practices, and continuously building
+            projects. By exploring various design patterns and keeping an eye on
+            new trends, you can create scalable, maintainable, and efficient web
+            applications. Happy coding!
+          </p>
+        </div>
+      </main>
+
+      <aside class="sidebar">
+        <div class="author-profile">
+          <img src="../portfolio-web-profile.png" alt="Author" />
+          <h3>Udara Wickramarathne</h3>
+          <p>
+            Undergraduate Software Engineer specializing in Flutter development.
+            Passionate about building accessible web experiences.
+          </p>
+        </div>
+      </aside>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-links">
+        <a href="#" class="footer-link"
+          ><i class="fab fa-linkedin"></i> LinkedIn</a
+        >
+        <a href="#" class="footer-link"
+          ><i class="fab fa-instagram"></i> Instagram</a
+        >
+        <a href="#" class="footer-link"
+          ><i class="fab fa-discord"></i> Discord</a
+        >
+        <a href="#" class="footer-link"><i class="fab fa-github"></i> GitHub</a>
+      </div>
+      <p>&copy; 2024 Udara Wickramarathne. All rights reserved.</p>
+    </footer>
+    <script>
+      // Function to observe elements
+      const observer = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach((entry) => {
+            // If the element is in view, add the 'visible' class
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              observer.unobserve(entry.target); // Stop observing after animation trigger
+            }
+          });
+        },
+        {
+          threshold: 0.5, // Trigger when 50% of the element is in view
+        }
+      );
+
+      // Apply observer to all elements with .scroll-animate class
+      document.querySelectorAll(".scroll-animate").forEach((element) => {
+        observer.observe(element);
+      });
+    </script>
+  </body>
+</html>

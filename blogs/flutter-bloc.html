@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Udara Wickramarathne</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="blogs.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo-container">
+          <img class="logo-img" src="../logo.png" alt="" />
+          <p class="logo">
+            UDARA<br />
+            WICKRAMARATHNE
+          </p>
+        </div>
+        <ul class="menu" id="menu">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="../about-me.html">About</a></li>
+          <li><a href="../index.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="article-page">
+      <main class="article-main">
+        <div class="article-header">
+          <h1 class="scroll-animate">Mastering Flutter BLoC: A Comprehensive Guide</h1>
+          <p class="article-date">Published on November 22, 2024</p>
+        </div>
+
+        <div class="article-content">
+          <p class="scroll-animate">
+            Flutter BLoC (Business Logic Component) is a powerful state management library that helps you separate business logic from UI in your Flutter applications. This guide covers best practices, learning strategies, must-do projects, design patterns, and expert insights to elevate your Flutter BLoC skills.
+          </p>
+          <br />
+          <h2>📚 <strong>How to Learn Flutter BLoC Effectively</strong></h2>
+          <h3>1. <strong>Understand the Basics</strong></h3>
+          <p>
+            Start with understanding the core concepts of Flutter and Dart. Familiarize yourself with:
+          </p>
+          <ul>
+            <li>
+              <strong>Streams:</strong> Asynchronous data streams used in BLoC.
+            </li>
+            <li>
+              <strong>Events and States:</strong> Mechanisms for managing state changes.
+            </li>
+            <li>
+              <strong>BLoC Pattern:</strong> Architecture for separating business logic from UI.
+            </li>
+          </ul>
+
+          <h3>2. <strong>Explore Core Concepts</strong></h3>
+          <ul>
+            <li>
+              <strong>Cubit:</strong> A simplified version of BLoC for managing state.
+            </li>
+            <li><strong>StreamSubscription:</strong> Managing stream listeners.</li>
+            <li><strong>Repository Pattern:</strong> Abstracting data sources.</li>
+            <li><strong>Dependency Injection:</strong> Managing dependencies with packages like get_it.</li>
+          </ul>
+
+          <h3 class="scroll-animate">
+            3. <strong>Practice, Practice, Practice!</strong>
+          </h3>
+          <p class="scroll-animate">
+            Build small projects to apply your knowledge practically. Contribute to open-source repositories and explore coding challenges.
+          </p>
+
+          <h2 class="scroll-animate">
+            🛠️ <strong>Must-Do Projects for Mastery</strong>
+          </h2>
+          <ul class="scroll-animate">
+            <li>
+              <strong>Counter App:</strong> Start simple to learn about state management with Cubit.
+            </li>
+            <li>
+              <strong>Weather App:</strong> Learn API integration and state management with BLoC.
+            </li>
+            <li>
+              <strong>Todo App:</strong> Implement CRUD operations and local storage.
+            </li>
+            <li>
+              <strong>Authentication Flow:</strong> Manage authentication states and navigation.
+            </li>
+            <li>
+              <strong>Chat App:</strong> Explore real-time updates and complex state management.
+            </li>
+          </ul>
+
+          <h2 class="scroll-animate">🧑‍💻 <strong>Best Practices</strong></h2>
+          <ul class="scroll-animate">
+            <li>
+              <strong>Separation of Concerns:</strong> Keep your BLoC classes focused on business logic and your UI components focused on presentation.
+            </li>
+            <li>
+              <strong>State Management:</strong> Use Cubit for simple state management and BLoC for more complex scenarios.
+            </li>
+            <li>
+              <strong>Testing:</strong> Write unit tests for your BLoC classes to ensure business logic is correct.
+            </li>
+            <li>
+              <strong>Readable Code:</strong> Maintain clear, consistent naming conventions and follow best practices for code organization.
+            </li>
+            <li>
+              <strong>Performance Optimization:</strong> Use efficient state management techniques to ensure your app runs smoothly.
+            </li>
+          </ul>
+
+          <h2 class="scroll-animate">
+            🎨 <strong>Design Patterns in Flutter BLoC</strong>
+          </h2>
+          <h3 class="scroll-animate">
+            1. <strong>Repository Pattern</strong>
+          </h3>
+          <div class="highlight" class="scroll-animate">
+            <code>
+              class UserRepository {<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;final UserApiClient apiClient;<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;UserRepository({required this.apiClient});<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;Future<User> getUser() async {<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return await apiClient.fetchUser();<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;}<br />
+              }
+            </code>
+          </div>
+
+          <h3 class="scroll-animate">2. <strong>Provider Pattern</strong></h3>
+          <div class="highlight" class="scroll-animate">
+            <code>
+              class MyApp extends StatelessWidget {<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;@override<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;Widget build(BuildContext context) {<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return MultiProvider(<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;providers: [<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Provider(create: (_) => UserRepository()),<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;child: MyHomePage(),<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;);<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;}<br />
+              }
+            </code>
+          </div>
+
+          <h3 class="scroll-animate">
+            3. <strong>Dependency Injection</strong>
+          </h3>
+          <p>
+            Use packages like get_it to manage dependencies and make your code more modular and testable.
+          </p>
+
+          <h3 class="scroll-animate">4. <strong>Custom BLoC</strong></h3>
+          <p>
+            Create custom BLoC classes to encapsulate complex business logic and state management.
+          </p>
+
+          <h2 class="scroll-animate">
+            💡 <strong>Expert Insights and Tips</strong>
+          </h2>
+          <ul class="scroll-animate">
+            <li>
+              <strong>Stay Updated:</strong> Flutter and BLoC evolve rapidly. Follow updates on the official Flutter blog and GitHub repository.
+            </li>
+            <li>
+              <strong>Master Dart:</strong> Combining Flutter with Dart enhances your ability to write efficient and maintainable code.
+            </li>
+            <li>
+              <strong>Focus on Performance:</strong> Ensure your application runs smoothly by optimizing state management and avoiding unnecessary rebuilds.
+            </li>
+          </ul>
+
+          <h2 class="scroll-animate">🚀 <strong>Final Thoughts</strong></h2>
+          <p class="scroll-animate">
+            Mastering Flutter BLoC involves understanding its core concepts, applying best practices, and continuously building projects. By exploring various design patterns and keeping an eye on new trends, you can create scalable, maintainable, and efficient applications. Happy coding!
+          </p>
+        </div>
+      </main>
+
+      <aside class="sidebar">
+        <div class="author-profile">
+          <img src="../portfolio-web-profile.png" alt="Author" />
+          <h3>Udara Wickramarathne</h3>
+          <p>
+            Undergraduate Software Engineer specializing in Flutter development.
+            Passionate about building accessible web experiences.
+          </p>
+        </div>
+      </aside>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-links">
+        <a href="#" class="footer-link"
+          ><i class="fab fa-linkedin"></i> LinkedIn</a
+        >
+        <a href="#" class="footer-link"
+          ><i class="fab fa-instagram"></i> Instagram</a
+        >
+        <a href="#" class="footer-link"
+          ><i class="fab fa-discord"></i> Discord</a
+        >
+        <a href="#" class="footer-link"><i class="fab fa-github"></i> GitHub</a>
+      </div>
+      <p>&copy; 2024 Udara Wickramarathne. All rights reserved.</p>
+    </footer>
+    <script>
+      // Function to observe elements
+      const observer = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach((entry) => {
+            // If the element is in view, add the 'visible' class
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              observer.unobserve(entry.target); // Stop observing after animation trigger
+            }
+          });
+        },
+        {
+          threshold: 0.5, // Trigger when 50% of the element is in view
+        }
+      );
+
+      // Apply observer to all elements with .scroll-animate class
+      document.querySelectorAll(".scroll-animate").forEach((element) => {
+        observer.observe(element);
+      });
+    </script>
+  </body>
+</html>

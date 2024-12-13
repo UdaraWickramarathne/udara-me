@@ -9,13 +9,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="button-style.css">
+    <link rel="stylesheet" href="card-project.css">
     <link rel="stylesheet" href="animation.css">
     <script src="https://kit.fontawesome.com/e9d5db4514.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -23,8 +24,17 @@
     <header>
         <nav class="navbar">
             <div class="logo-container">
-                <img class="logo-img" src="logo-.png" alt="">
+                <img class="logo-img" src="logo.png" alt="">
                 <p class="logo">UDARA<br> WICKRAMARATHNE</p>
+            </div>
+            <div class="pet">
+                <img id="anchor" src="download.png" alt="">
+                <div class="eye-socket left">
+                    <div class="eye"></div>
+                </div>
+                <div class="eye-socket right">
+                    <div class="eye"></div>
+                </div>
             </div>
             <ul class="menu" id="menu">
                 <li><a href="#">Home</a></li>
@@ -37,9 +47,21 @@
 
     <!-- Hero Section -->
     <section id="home" class="section hero">
+        <div class="bubbles">
+            <div class="bubble bubble1"></div>
+            <div class="bubble bubble2"></div>
+            <div class="bubble bubble3"></div>
+            <div class="bubble bubble4"></div>
+            <div class="bubble bubble5"></div>
+            <div class="bubble bubble6"></div>
+            <div class="bubble bubble7"></div>
+            <div class="bubble bubble8"></div>
+            <div class="bubble bubble9"></div>
+            <div class="bubble bubble10"></div>
+        </div>
         <div class="content">
-            <h1>Your Vision, My Code</h1>
-            <p>Let's collaborate to turn your ideas into reality. I'll bring your vision to life with clean, efficient <br>code and a focus on user experience.</p>
+            <h1 class="btn-shine">Your Vision, My Code</h1>
+            <p>Let's collaborate to turn your ideas into reality. I'll bring your vision to life with clean, efficient code and a focus on user experience.</p>
             <a href="#social">
                 <button class="Btn-Container">
                     <span class="text">let's go!</span>
@@ -67,6 +89,7 @@
             </a>
 
         </div>
+       
     </section>
 
     <!-- About Section -->
@@ -75,7 +98,7 @@
             <div class="left-section" >
                 I'm Udara<br>Wickramarathne
             </div>
-            <img src="portfolio-web-profile.png" alt="" width="320px">
+            <img class="main-img" src="portfolio-web-profile.png" alt="">
             <div class="right-section">Undergraduate Software Engineer,<br>specializing in Flutter. When the screen goes dark, the game begins.</div>
         </div>
         <a href="about-me.html" class="about-button">
@@ -88,11 +111,11 @@
     <section id="blog" class="section blog-section">
         <p class="section-title">BLOGS<span>.</span></p>
         <div class="blog-container">
-            <div class="card" onclick="navigateToBlog('#contact')">
+            <div class="card" onclick="navigateToBlog('/blogs/react-web.html')">
                 <div class="main-content">
                     <div class="header">
                         <span>Article on</span>
-                        <span>29-June-2023</span>
+                        <span>29-Nov-2024</span>
                     </div>
                     <p class="heading">Different ways to use CSS in React</p>
                     <div class="categories">
@@ -104,48 +127,48 @@
                     by Udara Wickramarathne
                 </div>
             </div>
-            <div class="card" onclick="navigateToBlog('#contact')">
+            <div class="card" onclick="navigateToBlog('/blogs/flutter-bloc.html')">
                 <div class="main-content">
                     <div class="header">
                         <span>Article on</span>
-                        <span>29-June-2023</span>
+                        <span>03-Dec-2024</span>
                     </div>
-                    <p class="heading">Different ways to use CSS in React</p>
+                    <p class="heading">Mastering Flutter BLoC</p>
                     <div class="categories">
-                        <span>React</span>
-                        <span>Css</span>
+                        <span>Flutter</span>
+                        <span>Bloc</span>
                     </div>
                 </div>
                 <div class="card-footer">
                     by Udara Wickramarathne
                 </div>
             </div>
-            <div class="card" onclick="navigateToBlog('#contact')">
+            <div class="card" onclick="navigateToBlog('/blogs/git-github.html')">
                 <div class="main-content">
                     <div class="header">
                         <span>Article on</span>
-                        <span>29-June-2023</span>
+                        <span>10-Dec-2024</span>
                     </div>
-                    <p class="heading">Different ways to use CSS in React</p>
+                    <p class="heading">Mastering Git and GitHub</p>
                     <div class="categories">
-                        <span>React</span>
-                        <span>Css</span>
+                        <span>Git</span>
+                        <span>GitHub</span>
                     </div>
                 </div>
                 <div class="card-footer">
                     by Udara Wickramarathne
                 </div>
             </div>
-            <div class="card" onclick="navigateToBlog('#contact')">
+            <div class="card" onclick="navigateToBlog('/blogs/java-servlet.html')">
                 <div class="main-content">
                     <div class="header">
                         <span>Article on</span>
-                        <span>29-June-2023</span>
+                        <span>12-Dec-2024</span>
                     </div>
-                    <p class="heading">Different ways to use CSS in React</p>
+                    <p class="heading">Mastering Java Servlet and JSP</p>
                     <div class="categories">
-                        <span>React</span>
-                        <span>Css</span>
+                        <span>Java</span>
+                        <span>Servlet</span>
                     </div>
                 </div>
                 <div class="card-footer">
@@ -153,7 +176,7 @@
                 </div>
             </div>
         </div>
-        <button href="#" class="button" style="--clr: #7808d0">
+        <button onclick="{navigateToBlog('blog.html')}" class="button" style="--clr: #7808d0">
             <span class="button__icon-wrapper">
                 <svg
                 viewBox="0 0 14 15"
@@ -208,10 +231,7 @@
               <span>Firebase</span>
             </div>
             <p>
-              I primarily work with React and NextJS and the libraries surrounding it as
-              my frontend tools for both personal and professional projects. I also have
-              some experience with backend technologies like NodeJS, Express, Spring,
-              and PostgreSQL. I am familiar with REST and tRPC API architecture.
+                I am proficient in a diverse range of programming languages and technologies, including React, Java, JavaScript, and Flutter for building dynamic web and mobile applications. My expertise extends to backend development with C#, C, and databases like MySQL and MS-SQL, while also leveraging Firebase for real-time data management. I am passionate about creating seamless, scalable solutions with strong frontend skills in HTML and CSS.
             </p>
           </div>
           <div class="skills-column">
@@ -223,10 +243,7 @@
               <span>Linux</span>
             </div>
             <p>
-              I use Git for version control and have experience with GitHub and GitLab. I
-              test my APIs using Postman and Insomnia. I deploy my projects on Vercel and
-              have experience with Docker and Linux, or with a cPanel server using Gitlab
-              CI/CD.
+                I am experienced with essential tools like Git and GitHub for version control and collaborative development. I rely on VSCode for efficient code editing and debugging, and I am comfortable working in Linux environments, ensuring smooth development workflows and system management.
             </p>
           </div>
         </div>
@@ -256,28 +273,71 @@
       
 
     <!-- Projects Section -->
-    <section id="projects" class="projects">
+
+    <section class="projects-section">
         <p class="section-title">MY ACHIEVEMENTS<span class="dot">.</span></p>
-        <div class="grid">
-            <div class="project-card">
-                <img src="paylink.png" alt="Project 1">
-                <h3>Java-Based Online Banking System</h3>
-                <p>Discover the power of PayLink, an advanced online banking application engineered with precision to deliver a seamless user experience. This demo showcases the cutting-edge technology stack and design principles that bring PayLink to life.</p>
-            </div>
-            <div class="project-card">
-                <img src="foodie.png" alt="Project 2">
-                <h3>Point of Sales System with C#</h3>
-                <p>Point of Sales (POS) system developed using C# and Windows Forms. This comprehensive system is designed to streamline retail operations and enhance business efficiency</p>
-            </div>
-            <div class="project-card">
-                <img src="paylink.png" alt="Project 1">
-                <h3>Java-Based Online Banking System</h3>
-                <p>Discover the power of PayLink, an advanced online banking application engineered with precision to deliver a seamless user experience. This demo showcases the cutting-edge technology stack and design principles that bring PayLink to life.</p>
-            </div>
-            <div class="project-card">
-                <img src="foodie.png" alt="Project 2">
-                <h3>Point of Sales System with C#</h3>
-                <p>Point of Sales (POS) system developed using C# and Windows Forms. This comprehensive system is designed to streamline retail operations and enhance business efficiency</p>
+        <div class="projects">
+            <div class="project-container swiper">
+                <div class="card-wrapper">
+                    <ul class="card-list swiper-wrapper">
+                        <li class="card-item swiper-slide">
+                            <a href="" class="card-link">
+                                <img src="paylink.png" alt="card" class="card-image">
+                                <p class="badge">Java</p>
+                                <p class="badge">MySQL</p>
+                                <h2 class="card-title">
+                                    Java-Based Online Banking System
+                                </h2>
+                                <button class="card-button material-symbols-rounded">
+                                    arrow_forward
+                                </button>
+                            </a>
+                        </li>
+        
+                        <li class="card-item swiper-slide">
+                            <a href="" class="card-link">
+                                <img src="foodie.png" alt="card" class="card-image">
+                                <p class="badge">C#</p>
+                                <p class="badge">MS-SQL</p>
+                                <h2 class="card-title">
+                                    Point of Sale System using C#
+                                </h2>
+                                <button class="card-button material-symbols-rounded">
+                                    arrow_forward
+                                </button>
+                            </a>
+                        </li>
+        
+                        <li class="card-item swiper-slide">
+                            <a href="" class="card-link">
+                                <img src="minch-bar.png" alt="card" class="card-image">
+                                <p class="badge">Java</p>
+                                <h2 class="card-title">
+                                    Kiosk Food Ordering System C#
+                                </h2>
+                                <button class="card-button material-symbols-rounded">
+                                    arrow_forward
+                                </button>
+                            </a>
+                        </li>
+        
+                        <li class="card-item swiper-slide">
+                            <a href="" class="card-link">
+                                <img src="foodie.png" alt="card" class="card-image">
+                                <p class="badge">Java</p>
+                                <h2 class="card-title">
+                                    Java-Based Online Banking System
+                                </h2>
+                                <button class="card-button material-symbols-rounded">
+                                    arrow_forward
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
         </div>
     </section>
@@ -302,12 +362,13 @@
 
     <!-- Contact Section -->
     <section class="contact-section" id="contact">
-        <h2 class="section-title">Shall we ?</h2>
+        <h2 class="section-title contact-title">Shall we ?</h2>
         <p>Have a project in mind? Contact me below:</p>
-        <form class="contact-form">
-            <input type="text" placeholder="Your Email" class="input-field">
-            <textarea placeholder="Your message" class="textarea-field"></textarea>
-            <button class="submit-button">
+        <form class="contact-form" id="form-contact" method="POST" action="">
+            <input type="text" placeholder="Your Name" class="input-field" name="full-name" id="full-name">
+            <input type="text" placeholder="Your Email" class="input-field" name="email" id="email">
+            <textarea placeholder="Your message" class="textarea-field" name="message" id="message"></textarea>
+            <button class="submit-button" name="submit" type="submit">
                 <div class="svg-wrapper-1">
                     <div class="svg-wrapper">
                     <svg
@@ -326,22 +387,29 @@
                 </div>
                 <span>Submit</span>
             </button>
-
         </form>
+        <div id="loadingOverlay" class="overlay">
+            <div class="loader"></div>
+        </div>
+        <div id="popupMessage" class="popup hidden">
+        </div>
+          
+          
     </section>
     
 
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-links">
-          <a href="#" class="footer-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
-          <a href="#" class="footer-link"><i class="fab fa-instagram"></i> Instagram</a>
-          <a href="#" class="footer-link"><i class="fab fa-discord"></i> Discord</a>
-          <a href="#" class="footer-link"><i class="fab fa-github"></i> GitHub</a>
+          <a href="https://www.linkedin.com/in/udara-wickramarathne/" target="_blank" class="footer-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+          <a href="https://www.instagram.com/udara.me/" target="_blank" class="footer-link"><i class="fab fa-instagram"></i> Instagram</a>
+          <a href="https://discord.gg/7tzHk8E" target="_blank" class="footer-link"><i class="fab fa-discord"></i> Discord</a>
+          <a href="https://github.com/UdaraWickramarathne" target="_blank" class="footer-link"><i class="fab fa-github"></i> GitHub</a>
         </div>
         <p>&copy; 2024 Udara Wickramarathne. All rights reserved.</p>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script> 
-    <script type="text/javascript" src="cssanimation-gsap.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>

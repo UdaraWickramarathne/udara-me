@@ -1,62 +1,61 @@
-/* From Uiverse.io by vinodjangid07 */ 
+/* From Uiverse.io by vinodjangid07 */
 .Btn-Container {
-    display: flex;
-    width: 170px;
-    height: fit-content;
-    background-color: #1d2129;
-    border-radius: 40px;
-    box-shadow: 0px 5px 10px #bebebe;
-    justify-content: space-between;
-    align-items: center;
-    border: none;
-    cursor: pointer;
-    margin-top: 25px;
+  display: flex;
+  width: 170px;
+  height: fit-content;
+  background-color: #1d2129;
+  border-radius: 40px;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  margin-top: 25px;
+  animation: leFadeIn 2s ease;
+}
+.icon-Container {
+  width: 45px;
+  height: 45px;
+  background-color: #4fc3dc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 3px solid #1d2129;
+}
+.text {
+  width: calc(170px - 45px);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.1em;
+  letter-spacing: 1.2px;
+}
+.icon-Container svg {
+  transition-duration: 1.5s;
+}
+.Btn-Container:hover .icon-Container svg {
+  transition-duration: 1.5s;
+  animation: arrow 1s linear infinite;
+}
+@keyframes arrow {
+  0% {
+    opacity: 0;
+    margin-left: 0px;
   }
-  .icon-Container {
-    width: 45px;
-    height: 45px;
-    background-color: #ffdeff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    border: 3px solid #1d2129;
+  100% {
+    opacity: 1;
+    margin-left: 10px;
   }
-  .text {
-    width: calc(170px - 45px);
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 1.1em;
-    letter-spacing: 1.2px;
-  }
-  .icon-Container svg {
-    transition-duration: 1.5s;
-  }
-  .Btn-Container:hover .icon-Container svg {
-    transition-duration: 1.5s;
-    animation: arrow 1s linear infinite;
-  }
-  @keyframes arrow {
-    0% {
-      opacity: 0;
-      margin-left: 0px;
-    }
-    100% {
-      opacity: 1;
-      margin-left: 10px;
-    }
-  }
+}
 
-
-/* From Uiverse.io by adamgiebl */ 
+/* From Uiverse.io by adamgiebl */
 .submit-button {
   font-family: inherit;
   font-size: 20px;
-  background: royalblue;
-  color: white;
+  background: #4fc3dc;
+  color: black;
   padding: 0.7em 1em;
   padding-left: 0.9em;
   display: flex;
@@ -107,12 +106,12 @@
   }
 }
 
-/* From Uiverse.io by Creatlydev */ 
+/* From Uiverse.io by Creatlydev */
 .button {
   line-height: 1;
   text-decoration: none;
   display: inline-flex;
-  border: 1px solid #daffb8;
+  border: 1px solid #4fc3dc;
   cursor: pointer;
   align-items: center;
   gap: 0.75rem;
@@ -142,9 +141,8 @@
 }
 
 .button:hover {
-  background-color: #daffb8;
+  background-color: #4fc3dc;
   color: black;
-  
 }
 
 .button:hover .button__icon-wrapper {
@@ -165,4 +163,3 @@
   transition: transform 0.3s ease-in-out 0.1s;
   transform: translate(0);
 }
-

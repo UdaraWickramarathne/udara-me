@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Udara Wickramarathne</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .blogs {
+        margin-top: 150px;
+        padding: 50px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo-container">
+          <img class="logo-img" src="logo.png" alt="" />
+          <p class="logo">
+            UDARA<br />
+            WICKRAMARATHNE
+          </p>
+        </div>
+        <ul class="menu" id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="about-me.html">About</a></li>
+          <li><a href="index.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="blogs">
+      <p class="section-title">BLOGS<span>.</span></p>
+      <div class="blog-container">
+        <div class="card" onclick="navigateToBlog('/blogs/react-web.html')">
+          <div class="main-content">
+            <div class="header">
+              <span>Article on</span>
+              <span>29-Nov-2024</span>
+            </div>
+            <p class="heading">Different ways to use CSS in React</p>
+            <div class="categories">
+              <span>React</span>
+              <span>Css</span>
+            </div>
+          </div>
+          <div class="card-footer">by Udara Wickramarathne</div>
+        </div>
+        <div class="card" onclick="navigateToBlog('/blogs/flutter-bloc.html')">
+          <div class="main-content">
+            <div class="header">
+              <span>Article on</span>
+              <span>03-Dec-2024</span>
+            </div>
+            <p class="heading">Mastering Flutter BLoC</p>
+            <div class="categories">
+              <span>Flutter</span>
+              <span>Bloc</span>
+            </div>
+          </div>
+          <div class="card-footer">by Udara Wickramarathne</div>
+        </div>
+        <div class="card" onclick="navigateToBlog('/blogs/git-github.html')">
+          <div class="main-content">
+            <div class="header">
+              <span>Article on</span>
+              <span>10-Dec-2024</span>
+            </div>
+            <p class="heading">Mastering Git and GitHub</p>
+            <div class="categories">
+              <span>Git</span>
+              <span>GitHub</span>
+            </div>
+          </div>
+          <div class="card-footer">by Udara Wickramarathne</div>
+        </div>
+        <div class="card" onclick="navigateToBlog('/blogs/java-servlet.html')">
+          <div class="main-content">
+            <div class="header">
+              <span>Article on</span>
+              <span>12-Dec-2024</span>
+            </div>
+            <p class="heading">Mastering Java Servlet and JSP</p>
+            <div class="categories">
+              <span>Java</span>
+              <span>Servlet</span>
+            </div>
+          </div>
+          <div class="card-footer">by Udara Wickramarathne</div>
+        </div>
+      </div>
+    </section>
+    <script>
+      function navigateToBlog(url) {
+        window.location.href = url; // Redirect to the specified URL
+      }
+    </script>
+  </body>
+</html>

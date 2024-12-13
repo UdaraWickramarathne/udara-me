@@ -1,134 +1,135 @@
 /* About Section */
 .about-section {
-    padding: 0 20px 50px 20px;
-    background-color: #121212;
-    text-align: center;
+  padding: 0 20px 50px 20px;
+  background-color: #121212;
+  text-align: center;
+  margin-top: 150px;
 }
 
 .about-container {
-    max-width: 1200px;
-    margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .about-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
 }
 
 .left {
-    flex: 1;
-    padding: 20px;
-    text-align: center;
-    align-self: self-start;
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  align-self: self-start;
 }
 
 .profile-img {
-    width: 320px;
-    max-width: 100%;  /* Ensures it doesn't overflow on smaller screens */
+  width: 320px;
+  max-width: 100%; /* Ensures it doesn't overflow on smaller screens */
 }
 
 .right {
-    flex: 2;
-    padding: 20px;
-    text-align: left;
+  flex: 2;
+  padding: 20px;
+  text-align: left;
 }
 
 .right p {
-    font-size: 18px;
-    color: #666;
-    margin-bottom: 20px;
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
 }
 
 .right h3 {
-    color: white;
-    margin-top: 40px;
-    font-size: 1.5em;
-    margin-bottom: 20px;
+  color: white;
+  margin-top: 40px;
+  font-size: 1.5em;
+  margin-bottom: 20px;
 }
 
 .title-name {
-    font-size: 3em;
-    color: white;
-    margin-bottom: 50px;
-    border-top: 1px solid white;
-    padding-top: 30px;
+  font-size: 3em;
+  color: white;
+  margin-bottom: 50px;
+  padding-top: 30px;
 }
 
 .contact-button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
 }
 
 .contact-button:hover {
-    background-color: #555;
+  background-color: #555;
 }
 
-.space-div{
-    padding: 10px 0;
+.space-div {
+  padding: 10px 0;
 }
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
-    .about-content {
-        flex-direction: column;  /* Stacks the content vertically */
-        align-items: center; /* Centers content */
-        justify-content: center;
-    }
+  .about-content {
+    flex-direction: column; /* Stacks the content vertically */
+    align-items: center; /* Centers content */
+    justify-content: center;
+  }
 
-    .left, .right {
-        flex: 1 1 100%; /* Each takes full width on smaller screens */
-        text-align: left;
-    }
+  .left,
+  .right {
+    flex: 1 1 100%; /* Each takes full width on smaller screens */
+    text-align: left;
+  }
 
-    .left{
-        align-self: center;
-    }
+  .left {
+    align-self: center;
+  }
 
-    .profile-img {
-        width: 250px; /* Adjust image size for mobile */
-        margin-bottom: 20px; /* Adds spacing between image and text */
-        display: block; /* Makes it a block element */
-        margin-left: auto; /* Centers the image */
-        margin-right: auto; /* Centers the image */
-    }
+  .profile-img {
+    width: 250px; /* Adjust image size for mobile */
+    margin-bottom: 20px; /* Adds spacing between image and text */
+    display: block; /* Makes it a block element */
+    margin-left: auto; /* Centers the image */
+    margin-right: auto; /* Centers the image */
+  }
 
-    .right p {
-        font-size: 16px;  /* Slightly smaller text on mobile */
-    }
+  .right p {
+    font-size: 16px; /* Slightly smaller text on mobile */
+  }
 
-    .title-name {
-        font-size: 2.5em; /* Smaller title font size on mobile */
-    }
+  .title-name {
+    font-size: 2.5em; /* Smaller title font size on mobile */
+  }
 
-    .contact-button {
-        width: 100%; /* Button takes full width on smaller screens */
-        padding: 15px;
-        font-size: 18px;
-    }
+  .contact-button {
+    width: 100%; /* Button takes full width on smaller screens */
+    padding: 15px;
+    font-size: 18px;
+  }
 }
 
 /* Very Small Devices (e.g., smartphones in portrait) */
 @media (max-width: 480px) {
-    .title-name {
-        font-size: 2em;  /* Further reduce font size for small screens */
-    }
+  .title-name {
+    font-size: 2em; /* Further reduce font size for small screens */
+  }
 
-    .profile-img {
-        width: 200px;  /* Reduce image size further */
-    }
+  .profile-img {
+    width: 200px; /* Reduce image size further */
+  }
 
-    .right p {
-        font-size: 14px;  /* Further reduce font size */
-    }
+  .right p {
+    font-size: 14px; /* Further reduce font size */
+  }
 
-    .contact-button {
-        font-size: 16px;  /* Reduce button text size */
-    }
+  .contact-button {
+    font-size: 16px; /* Reduce button text size */
+  }
 }
